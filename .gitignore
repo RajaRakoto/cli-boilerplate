@@ -1,0 +1,87 @@
+# logs
+logs
+*.log
+npm-debug.log*
+lerna-debug.log*
+
+# production
+build
+dist
+
+# dependencies
+node_modules
+bower_components
+jspm_packages
+
+# yarn integrity file
+.yarn-integrity
+
+# reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# coverage 
+coverage
+lib-cov
+*.lcov
+.nyc_output
+
+# grunt
+.grunt
+
+# node-waf configuration
+.lock-wscript
+
+# vscode
+.vscode
+!.vscode/tasks.js
+.vscode-test
+
+# typescript
+typings
+*.tsbuildinfo
+
+# jetBrains IDEs
+.idea
+
+# cache & history
+.cache
+.npm
+.eslintcache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.node_repl_history
+
+# dotenv environment variables file
+.env
+.env.test
+
+# misc
+.DS_Store
+
+# output
+*.tgz
+
+# serverless
+.serverless
+
+# fusebox
+.fusebox
+
+# dynamodb
+.dynamodb
+
+# ternjs
+.tern-port
+
+# own 
+backups
+tmp
+

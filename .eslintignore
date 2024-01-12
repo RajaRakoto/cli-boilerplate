@@ -1,0 +1,4 @@
+/**/*.js
+gruntfile.cjs
+build
+dist

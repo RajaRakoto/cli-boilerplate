@@ -1,0 +1,16 @@
+node_modules
+coverage
+.github
+.editorconfig
+.eslintignore
+.eslintrc
+.gitignore
+.prettierignore
+.prettierrc
+gruntfile.cjs
+jest.config.js
+package.json
+pnpm-lock.yaml
+README.md
+tsconfig.json
+tsconfig.release.json
