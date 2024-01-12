@@ -1,14 +1,18 @@
 {
-  "name": "node-typescript-boilerplate",
+  "name": "lucy",
   "version": "1.0.0",
-  "description": "Minimalistic boilerplate to quick-start Node.js development in TypeScript.",
+  "description": "Personal hacking assistant",
   "type": "module",
   "main": "build/src/main.js",
   "author": "Raja Rakotonirina <raja.rakoto7@gmail.com>",
-  "repository": "https://github.com/RajaRakoto/node-typescript-boilerplate",
+  "repository": "https://github.com/RajaRakoto/lucy",
   "keywords": [
     "typescript",
-    "node"
+    "node",
+    "tool",
+    "cli",
+    "assistant",
+    "hacking"
   ],
   "engines": {
     "node": ">= 20",
