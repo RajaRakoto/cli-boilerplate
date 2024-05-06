@@ -1,7 +1,6 @@
 /* libs */
 import inquirer from "inquirer";
 import { Command } from "commander";
-import * as emoji from "node-emoji";
 
 /* menu */
 import { menu_prompt } from "@/menu";
@@ -21,12 +20,9 @@ import pkg from "../package.json";
 /**
  * @description Entry point of the CLI
  */
-export async function myCLI(): Promise<void> {
+export async function lucyCLI(): Promise<void> {
 	// show banner
-	const banner = await bannerRenderer(
-		"my-cli",
-		`Welcome to my CLI ! ${emoji.get("smile")}`,
-	);
+	const banner = await bannerRenderer("lucy", `${pkg.description}`);
 	console.log(`${banner}\n`);
 
 	// start menu
@@ -47,7 +43,7 @@ export async function myCLI(): Promise<void> {
 			exitCLI();
 			break;
 		default:
-			myCLI();
+			lucyCLI();
 			break;
 	}
 }
@@ -60,7 +56,7 @@ function args(): void {
 	if (program.opts().version) {
 		console.log(`version ${packageVersion}`);
 	} else {
-		myCLI();
+		lucyCLI();
 	}
 }
 
