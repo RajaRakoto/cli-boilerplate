@@ -38,7 +38,7 @@ module.exports = (grunt) => {
 			},
 			bin: {
 				options: {
-					archive: backupsDestination + "bin.tar.gz",
+					archive: `${backupsDestination}bin.tar.gz`,
 				},
 				expand: true,
 				cwd: "./bin/",

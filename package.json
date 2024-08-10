@@ -17,17 +17,8 @@
 	},
 	"homepage": "https://github.com/RajaRakoto/lucy#readme",
 	"bugs": "https://github.com/RajaRakoto/lucy/issues",
-	"files": [
-		"dist"
-	],
-	"keywords": [
-		"nodejs",
-		"cli",
-		"typescript",
-		"tool",
-		"hacking",
-		"assistant"
-	],
+	"files": ["dist"],
+	"keywords": ["nodejs", "cli", "typescript", "tool", "hacking", "assistant"],
 	"engines": {
 		"node": ">= 16.0.0"
 	},
