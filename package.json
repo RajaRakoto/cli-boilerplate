@@ -15,9 +15,11 @@
 		"type": "git",
 		"url": "git+https://github.com/RajaRakoto/lucy.git"
 	},
-	"homepage": "https://github.com/RajaRakoto/cli-boilerplate#readme",
-	"bugs": "https://github.com/RajaRakoto/cli-boilerplate/issues",
-	"files": ["dist"],
+	"homepage": "https://github.com/RajaRakoto/lucy#readme",
+	"bugs": "https://github.com/RajaRakoto/lucy/issues",
+	"files": [
+		"dist"
+	],
 	"keywords": [
 		"nodejs",
 		"cli",
