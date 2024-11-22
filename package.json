@@ -61,7 +61,9 @@
 		"nvm": "nvm use"
 	},
 	"dependencies": {
+		"@google/generative-ai": "^0.21.0",
 		"commander": "^12.1.0",
+		"drizzle-orm": "^0.36.3",
 		"execa": "^9.5.1",
 		"figlet": "^1.8.0",
 		"inquirer": "^9.2.15",
@@ -80,6 +82,7 @@
 		"@types/ora": "^3.2.0",
 		"bun-plugin-dts": "^0.3.0",
 		"depcheck": "^1.4.7",
+		"drizzle-kit": "^0.28.1",
 		"grunt": "^1.6.1",
 		"grunt-contrib-compress": "^2.0.0",
 		"grunt-shell": "^4.0.0",
