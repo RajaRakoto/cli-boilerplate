@@ -7,15 +7,15 @@ await Bun.build({
 	minify: true,
 	splitting: false,
 	sourcemap: "external",
-	target: "node", // or 'bun', 'browser'
+	target: "bun", // or 'node', 'browser'
 	plugins: [dts()],
 }).catch(console.error);
 
 // shebang process
-async function shebangProcess(filePath, shebang) {
+async function _shebangProcess(filePath, shebang) {
 	const originalContent = await Bun.file(filePath).text();
 	const contentWithShebang = `${shebang}\n${originalContent}`;
 	await Bun.write(filePath, contentWithShebang);
 }
 
-shebangProcess("./dist/index.js", "#!/usr/bin/env node");
+// shebangProcess("./dist/index.js", "#!/usr/bin/env node");
