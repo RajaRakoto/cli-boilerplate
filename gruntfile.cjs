@@ -45,6 +45,15 @@ module.exports = (grunt) => {
 				src: includeAllFiles,
 				dest: "bin",
 			},
+      drizzle: {
+				options: {
+					archive: `${backupsDestination}drizzle.tar.gz`,
+				},
+				expand: true,
+				cwd: "./drizzle/",
+				src: includeAllFiles,
+				dest: "drizzle",
+			},
 			examples: {
 				options: {
 					archive: `${backupsDestination}examples.tar.gz`,
@@ -107,6 +116,7 @@ module.exports = (grunt) => {
 		"compress:main",
 		"compress:github",
 		"compress:bin",
+		"compress:drizzle",
 		"compress:examples",
 		"compress:fonts",
 		"compress:src",
@@ -121,7 +131,7 @@ module.exports = (grunt) => {
 
 	// tasks status (description)
 	const myTasksStatus = [
-		"compress: main | github | bin | examples | fonts | src | tests | tmp",
+		"compress: main | github | bin | drizzle | examples | fonts | src | tests | tmp",
 		"copy: fonts > dist",
 	];
 
