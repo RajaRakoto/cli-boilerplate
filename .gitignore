@@ -85,6 +85,9 @@ typings
 # ternjs
 .tern-port
 
+# drizzle
+drizzle/lucy.db
+
 # own
 backups
 tmp
