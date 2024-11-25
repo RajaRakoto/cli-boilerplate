@@ -45,7 +45,7 @@ module.exports = (grunt) => {
 				src: includeAllFiles,
 				dest: "bin",
 			},
-      drizzle: {
+			drizzle: {
 				options: {
 					archive: `${backupsDestination}drizzle.tar.gz`,
 				},
