@@ -24,4 +24,6 @@ export const tGeminiUsage = sqliteTable("t_gemini_usage", {
   rpmCounter: integer("rpm_counter"),
   rpdCounter: integer("rpd_counter"),
   tpmCounter: integer("tpm_counter"),
+  intervalDelay: integer("interval_delay"),
+  breakDelay: integer("breakDelay"),
 });

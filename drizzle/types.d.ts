@@ -19,4 +19,6 @@ export interface I_GeminiUsage {
   rpmCounter: number | null;
   rpdCounter: number | null;
   tpmCounter: number | null;
+  intervalDelay: number | null;
+  breakDelay: number | null;
 }
