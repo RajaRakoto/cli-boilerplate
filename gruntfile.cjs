@@ -1,5 +1,5 @@
 /**
- * @description: gruntfile for lucy
+ * @description: gruntfile for cli boilerplate
  * @requires: grunt | load-grunt-tasks | grunt-contrib-compress | grunt-shell
  */
 module.exports = (grunt) => {
@@ -35,15 +35,6 @@ module.exports = (grunt) => {
 				cwd: "./github/",
 				src: includeAllFiles,
 				dest: "github",
-			},
-			bin: {
-				options: {
-					archive: `${backupsDestination}bin.tar.gz`,
-				},
-				expand: true,
-				cwd: "./bin/",
-				src: includeAllFiles,
-				dest: "bin",
 			},
 			examples: {
 				options: {
@@ -106,7 +97,6 @@ module.exports = (grunt) => {
 	grunt.registerTask("backup", [
 		"compress:main",
 		"compress:github",
-		"compress:bin",
 		"compress:examples",
 		"compress:fonts",
 		"compress:src",
@@ -121,7 +111,7 @@ module.exports = (grunt) => {
 
 	// tasks status (description)
 	const myTasksStatus = [
-		"compress: main | github | bin | examples | fonts | src | tests | tmp",
+		"compress: main | github | examples | fonts | src | tests | tmp",
 		"copy: fonts > dist",
 	];
 
@@ -171,6 +161,6 @@ module.exports = (grunt) => {
 		}
 
 		// task resume
-		getTaskResume("== LUCY TASKS ==", myTasksNames, myTasksStatus, "blue");
+		getTaskResume("== MYCLI TASKS ==", myTasksNames, myTasksStatus, "blue");
 	});
 };
