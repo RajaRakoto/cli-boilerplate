@@ -1,7 +1,7 @@
 {
-	"name": "lucy",
+	"name": "cli-boilerplate",
 	"version": "1.0.0",
-	"description": "Personal hacking assistant 💀",
+	"description": "Minimalistic boilerplate to quick-start CLI development with Inquirer.js in TypeScript 🚀",
 	"author": "Raja Rakotonirina <raja.rakoto7@gmail.com>",
 	"license": "MIT",
 	"type": "module",
@@ -9,23 +9,23 @@
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"bin": {
-		"lucy": "./dist/index.js"
+		"my-cli": "./dist/index.js"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/RajaRakoto/lucy.git"
+		"url": "git+https://github.com/RajaRakoto/cli-boilerplate.git"
 	},
-	"homepage": "https://github.com/RajaRakoto/lucy#readme",
-	"bugs": "https://github.com/RajaRakoto/lucy/issues",
+	"homepage": "https://github.com/RajaRakoto/cli-boilerplate#readme",
+	"bugs": "https://github.com/RajaRakoto/cli-boilerplate/issues",
 	"files": ["dist"],
-	"keywords": ["nodejs", "cli", "typescript", "tool", "hacking", "assistant"],
+	"keywords": ["cli", "template", "boilerplate", "starter", "typescript", "minimalist", "inquirer", "inquirerjs"],
 	"engines": {
 		"node": ">= 16.0.0"
 	},
 	"scripts": {
 		"start": "bun dist/index.js",
 		"start:smol": "bun --smol dist/index.js",
-		"start:bin": "./dist/lucy",
+		"start:bin": "./dist/my-cli",
 		"clean": "rimraf build dist coverage",
 		"dev": "bun run src/index.ts",
 		"dev:watch": "bun --watch run src/index.ts",
@@ -34,7 +34,7 @@
 		"dev:smol:hot": "bun --smol --hot run src/index.ts",
 		"build": "bun run clean && bun run build.js && grunt copy",
 		"build:watch": "bun build src/index.ts --outdir dist --watch",
-		"build:bin": "bun build --compile --minify --sourcemap src/index.ts --outfile dist/lucy",
+		"build:bin": "bun build --compile --minify --sourcemap src/index.ts --outfile dist/my-cli",
 		"test": "bun test",
 		"test:watch": "bun test --watch",
 		"biome:start": "biome start",
@@ -50,17 +50,18 @@
 		"npm-version:patch": "npm version patch",
 		"npm-login": "npm login",
 		"npm-publish": "npm publish --access public",
-		"npm-unpublish": "npm unpublish --force lucy",
+		"npm-unpublish": "npm unpublish --force my-cli",
 		"npm-reset:registry": "npm config delete registry",
 		"npm-check:registry": "npm config get registry",
 		"npm-proxy-set:registry": "npm set registry http://localhost:4873/",
 		"npm-proxy:start": "bun run npm-proxy-set:registry && verdaccio",
 		"npm-proxy:publish": "npm publish --registry http://localhost:4873/",
-		"npm-proxy:unpublish": "npm unpublish --force --registry http://localhost:4873/ lucy",
+		"npm-proxy:unpublish": "npm unpublish --force --registry http://localhost:4873/ my-cli",
 		"npm-proxy:republish": "bun run npm-proxy:unpublish && bun run npm-proxy:publish",
 		"nvm": "nvm use"
 	},
 	"dependencies": {
+		"chalk": "^5.3.0",
 		"commander": "^12.1.0",
 		"execa": "^9.5.1",
 		"figlet": "^1.8.0",
