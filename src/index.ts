@@ -20,9 +20,9 @@ import pkg from "../package.json";
 /**
  * @description Entry point of the CLI
  */
-export async function lucyCLI(): Promise<void> {
+export async function myCLI(): Promise<void> {
 	// show banner
-	const banner = await bannerRendererAsync("lucy", `${pkg.description}`);
+	const banner = await bannerRendererAsync("My-CLI", `${pkg.description}`);
 	console.log(`${banner}\n`);
 
 	// start menu
@@ -43,7 +43,7 @@ export async function lucyCLI(): Promise<void> {
 			exitCLI();
 			break;
 		default:
-			lucyCLI();
+			myCLI();
 			break;
 	}
 }
@@ -56,7 +56,7 @@ function args(): void {
 	if (program.opts().version) {
 		console.log(`version ${packageVersion}`);
 	} else {
-		lucyCLI();
+		myCLI();
 	}
 }
 
