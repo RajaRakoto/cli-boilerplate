@@ -3,7 +3,7 @@ import inquirer from "inquirer";
 import { Command } from "commander";
 
 /* menu */
-import { menu_prompt } from "@/menu";
+import { mainMenu_prompt } from "@/prompt";
 
 /* core */
 import { app } from "@/core/app";
@@ -26,18 +26,18 @@ export async function myCLI(): Promise<void> {
 	console.log(`${banner}\n`);
 
 	// start menu
-	const menu_answers = await inquirer.prompt(menu_prompt);
+	const choice = await inquirer.prompt(mainMenu_prompt);
 
 	// switch menu
-	switch (menu_answers.menu) {
-		case "option-1":
-			app("option 1");
+	switch (choice.mainMenu) {
+		case "operation-1":
+			app("operation 1");
 			break;
-		case "option-2":
-			app("option 2");
+		case "operation-2":
+			app("operation 2");
 			break;
-		case "option-3":
-			app("option 3");
+		case "operation-3":
+			app("operation 3");
 			break;
 		case "exit":
 			exitCLI();

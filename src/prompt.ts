@@ -5,26 +5,26 @@ import * as emoji from "node-emoji";
 
 // ==============================
 
-export const menu_prompt = [
+export const mainMenu_prompt = [
 	{
 		type: "list",
-		name: "menu",
-		message: chalk.green("What do you want to do ..."),
+		name: "mainMenu",
+		message: chalk.bgBlue("Choose an operation"),
 		loop: false,
 		pageSize: 15,
 		choices: [
-			new inquirer.Separator("=============== option list =============="),
+			new inquirer.Separator("============== operation list ============"),
 			{
-				name: `${emoji.get("pushpin")} option 1`,
-				value: "option-1",
+				name: `${emoji.get("pushpin")} operation 1`,
+				value: "operation-1",
 			},
 			{
-				name: `${emoji.get("pushpin")} option 2`,
-				value: "option-2",
+				name: `${emoji.get("pushpin")} operation 2`,
+				value: "operation-2",
 			},
 			{
-				name: `${emoji.get("pushpin")} option 3`,
-				value: "option-3",
+				name: `${emoji.get("pushpin")} operation 3`,
+				value: "operation-3",
 			},
 			new inquirer.Separator("=========================================="),
 			{

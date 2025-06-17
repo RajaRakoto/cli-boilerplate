@@ -33,7 +33,7 @@ export async function bannerRendererAsync(
 			const rendered = figlet.textSync(title, {
 				font: "StandardFont" as figlet.Fonts,
 			});
-			const coloredBanner = chalk.cyan(rendered);
+			const coloredBanner = chalk.magenta(rendered);
 			const packageVersion = pkg.version;
 			const result = `${coloredBanner}\n ${chalk.underline("version:")} ${packageVersion}\n\n ${description}`;
 			resolve(result);

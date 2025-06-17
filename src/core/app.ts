@@ -1,6 +1,6 @@
 import { restartAsync } from "@/core/restart";
 
-export function app(option: string): void {
-	console.log(`${option} selected !`);
+export function app(operation: string): void {
+	console.log(`${operation} selected !`);
 	restartAsync();
 }
