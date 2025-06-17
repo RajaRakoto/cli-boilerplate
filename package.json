@@ -18,7 +18,16 @@
 	"homepage": "https://github.com/RajaRakoto/cli-boilerplate#readme",
 	"bugs": "https://github.com/RajaRakoto/cli-boilerplate/issues",
 	"files": ["dist"],
-	"keywords": ["cli", "template", "boilerplate", "starter", "typescript", "minimalist", "inquirer", "inquirerjs"],
+	"keywords": [
+		"cli",
+		"template",
+		"boilerplate",
+		"starter",
+		"typescript",
+		"minimalist",
+		"inquirer",
+		"inquirerjs"
+	],
 	"engines": {
 		"node": ">= 16.0.0"
 	},
