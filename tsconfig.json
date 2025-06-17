@@ -34,7 +34,8 @@
 		"noUncheckedIndexedAccess": false,
 		"paths": {
 			"@/*": ["./src/*"]
-		}
+		},
+    "types": []
 	},
 	"include": ["*.ts", "**/*.ts"],
 	"exclude": ["./node_modules"]
